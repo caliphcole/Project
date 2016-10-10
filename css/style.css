@@ -1,0 +1,47 @@
+#menubar{
+    position:absolute;
+    top:0;
+    left:0;
+    right:0;
+    z-index: 9999;
+    background: #333;
+    width: 100%;
+    font-size: 18px;
+    max-height:44px;
+
+
+}
+
+.menubar{
+    margin: 0 auto;
+    max-width: 980px;
+    max-height: 44px;
+    padding:0 22px;
+    position:relative;
+    z-index: 2;
+
+}
+
+.menu-list{
+    cursor: default;
+    margin: 0 -10px;
+    width:auto;
+    max-height:44px;
+    text-justify: distribute;
+    color: #ffffff;
+    padding: 10px 10px 10px 10px;
+    text-align: center;
+
+}
+
+.menu-list-item{
+    display: inline-block;
+    max-height:44px;
+    font-size: 16px;
+    margin-right:60px;
+    z-index:1;
+    vertical-align: top;
+    text-align: inherit;
+}
+
+

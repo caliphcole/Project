@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Caliph Cole</title>
+
+    <!-- Include the core AngularJS library -->
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+    <!-- Include the AngularJS routing library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular-route.min.js"></script>
+
+    <!--StyleSheet-->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/slider.css">
+    <link rel="stylesheet" type="text/css" href="css/socialmedia.css">
+    <link rel="stylesheet" type="text/css" href="css/worktemplate.css">
+    <link rel="stylesheet" type="text/css" href="css/footer.css">
+
+   <link rel="stylesheet" type="text/css" href="css/stylesheet.css">
+
+</head>
+<body ng-app ="myApp">
+
+<div  class = "outer-container" ng-controller="MainController">
+
+<div class="menu-index">
+    <menu-info menu="app"></menu-info>
+</div>
+    <div  class="slideshow-index">
+    <slide-show slide="app"></slide-show>
+    </div>
+
+    <div class="socialmedia-index">
+    <social-media social="app"></social-media>
+    </div>
+
+    <div  class="projectapps-index" ng-controller="ProjectController">
+
+        <div ng-repeat="project in projects">
+            <div class="outer-container-template">
+                <div class="inner-container-template">
+                    <div class="date">
+                        <span>{{project.date}}</span><!--{{date}}-->
+                    </div>
+                    <div class="picture">
+
+                        <a href="#"><img src="./img/Twitter_icon.png"/></a>
+                    </div>
+                    <div class ="title">
+
+                        <h1>
+                            {{project.title}}
+                        </h1>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class ="footer">
+        <footer-info></footer-info>
+    </div>
+
+
+</div>
+
+
+<!-- Modules -->
+<script src="js/app.js"></script>
+
+<!--Controllers-->
+<script src="js/controllers/maincontroller.js"></script>
+<script src="js/controllers/projectcontroller.js"></script>
+
+<!--directives-->
+<script src = "js/directives/menuInfo.js"></script>
+<script src = "js/directives/slideShow.js"></script>
+<script src = "js/directives/socialMedia.js"></script>
+<script src ="js/directives/projectapps.js"></script>
+<script src = "js/directives/footer.js"></script>
+
+
+
+</body>
+
+</html>

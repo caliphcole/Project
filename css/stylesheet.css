@@ -1,0 +1,46 @@
+html, body {
+    font-family: "Myriad Set Pro";
+    margin: 0;
+    height: 100%;
+}
+a{
+    color: inherit;
+    text-decoration: none;
+}
+
+
+.outer-container{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    margin: 0px 0px 0px 0px ;
+}
+
+.menu-index{
+    max-height: 44px;
+    position: relative;
+}
+
+.slideshow-index{
+    height: 720px;
+    position: relative;
+
+}
+
+.socialmedia-index{
+    top:20px;
+    max-height: 200px;
+    position: relative;
+}
+
+.projectapps-index{
+    background: #f2f2f2;
+    height:100%;
+    position: relative;
+
+}
+
+.footer{
+    max-height: 44px;
+    position: relative;
+}

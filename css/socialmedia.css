@@ -1,0 +1,20 @@
+
+.container-socialmedia{
+
+    position: relative;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    text-align: center;
+    width: 100%;
+
+
+}
+.social-media-item{
+
+    display: inline;
+    width: 32px;
+    height: 32px;
+
+}
+
+
